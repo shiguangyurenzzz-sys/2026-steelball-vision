@@ -1,0 +1,4 @@
+# 复制本文件为 wifi_config.py，再填写真实配置。
+# wifi_config.py 已被 .gitignore 排除，请勿提交真实凭据。
+WIFI_SSID = "replace-with-your-ssid"
+WIFI_PASSWORD = "replace-with-your-password"

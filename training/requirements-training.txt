@@ -1,0 +1,7 @@
+# Observed in the local `yolo` environment on 2026-08-01.
+# Install a PyTorch build that matches the target CUDA runtime separately.
+ultralytics==8.4.107
+onnx==1.22.0
+onnxruntime==1.28.0
+numpy==2.4.4
+Pillow==12.2.0

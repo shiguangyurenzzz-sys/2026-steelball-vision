@@ -1,0 +1,64 @@
+# Python and editor state
+__pycache__/
+*.py[cod]
+.idea/
+.vscode/
+.codex/
+_codex_work/
+
+# Local secrets
+wifi_config.py
+.env
+.env.*
+!.env.example
+
+# Datasets, recordings, and training outputs
+**/data_set/data.yaml
+**/data_set/images/
+**/data_set/labels/
+dataset/
+datasets/
+photos/
+annotation/
+runs/
+wandb/
+*.cache
+*.mp4
+
+# Generated model artifacts
+*.pt
+*.pth
+*.onnx
+*.kmodel
+*.engine
+*.tflite
+*.weights
+*.zip
+
+# Project dataset and deployable model
+!training/data_set/data.yaml
+!training/data_set/images/
+!training/data_set/images/**
+!training/data_set/labels/
+!training/data_set/labels/**/*.txt
+!training/yolov8n_roi_320_30_topk.kmodel
+
+# Build products and temporary files
+build/
+Debug/
+Release/
+*.o
+*.obj
+*.elf
+*.axf
+*.map
+.kmodel_tmp/
+~$*
+~WRL*.tmp
+*.tmp
+
+# Reports stay in the original project folder
+报告素材/
+*.doc
+*.docx
+*.pdf

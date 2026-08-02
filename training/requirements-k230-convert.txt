@@ -1,0 +1,7 @@
+# Observed in the local `k230_convert` environment on 2026-08-01.
+nncase==2.11.0
+onnx==1.15.0
+onnxruntime==1.19.0
+onnxsim==0.4.36
+numpy==2.4.6
+Pillow==12.3.0
