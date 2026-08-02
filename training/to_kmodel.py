@@ -58,7 +58,7 @@ def generate_data_ramdom(shape, batch):
 
 
 def generate_data(shape, batch, calib_dir):
-    # 固定文件顺序并跳过非图像文件，使五张校准图的选择可复现。
+    # 固定文件顺序并跳过非图像文件，使校准图的选择可复现。
     img_paths = [
         os.path.join(calib_dir, p)
         for p in sorted(os.listdir(calib_dir))
@@ -141,7 +141,7 @@ def main():
 
     # ptq_options
     ptq_options = nncase.PTQTensorOptions()
-    ptq_options.samples_count = 5
+    ptq_options.samples_count = 50
 
     if args.ptq_option == 0:
         ptq_options.calibrate_method = 'NoClip'
